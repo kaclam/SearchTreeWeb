@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Drzewa";
+}
+
+<div class="col-lg-12 mt-1">
+    <h2>Drzewo</h2>
+    <a id="btnClearSearch" class="btn btn-info mb-2 mt-2">Wyczyść</a>
+    <a id="btnBFSSearch" class="btn btn-info mb-2 mt-2">BFS</a>
+    <a id="btnDFS_PRESearch" class="btn btn-info mb-2 mt-2">DFS_PRE</a>
+    <a id="btnDFS_INSearch" class="btn btn-info mb-2 mt-2">DFS_IN</a>
+    <a id="btnDFS_POSTSearch" class="btn btn-info mb-2 mt-2">DFS_POST</a>
+
+    <br />
+    <label for="searchInput">Podaj wartość szukanego węzła:</label>
+    <input class="form-control" id="searchInput" type="text" />
+    
+    <br />
+    <canvas id="myCanvas" width="800" height="350" style="border: 2px dashed black"></canvas>
+    <canvas id="myCanvasSearch" width="800" height="350" style="border: 2px dashed black"></canvas>
+</div>
+
+<script src="~/js/tree.js" asp-append-version="true"></script>
